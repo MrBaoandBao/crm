@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_bootstrap.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:03 GMT -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>金吉鸟商城后台管理系统</title>
+    <meta name="keywords" content="金吉鸟商城后台">
+    <meta name="description" content="金吉鸟商城后台，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="ico/LuckyBird.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="css/winning_prize.css">
+
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <!-- Panel Other -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>中奖记录查询</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#">选项1</a>
+                        </li>
+                        <li><a href="#">选项2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <!-- 搜索框 -->
+                    <div class="winning_search">
+                        <table class="winning_table">
+                            <tr>
+                                <td>
+                                    <input type="text" name="中奖用户手机号" placeholder="中奖用户手机号码" class="writen_winning">
+                                </td>
+                                <td>
+                                    <input type="button" value="查询" class="btn_winning">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- 表格 -->
+                    <div class="winning_excel">
+                        <table class="winning_excel_table" border="1">
+                            <tr>
+                                <th width="12%">参与用户ID</th>
+                                <th>手机号码</th>
+                                <th>姓名</th>
+                                <th>身份证号码</th>
+                                <th>中奖时间</th>
+                                <th>奖品名称</th>
+                                <th>优惠券发放状态</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>3436576</td>
+                                <td>186529944774</td>
+                                <td>张三</td>
+                                <td>320924198906306139</td>
+                                <td>2018-02-12-12:00:00</td>
+                                <td>耐克鞋一双</td>
+                                <td>已发放</td>
+                                <td>
+                                    <a title="发放" data-toggle="modal" data-target="#winning_modal" style="color:#CC6600;">
+                                        <span>发放</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- End Example Events -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Panel Other -->
+    </div>
+    <!-- 当前页面弹出框 -->
+    <div class="modal inmodal" id="winning_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" style="width:400px;margin-top:85px;">
+            <div class="modal-content animated flipInY">
+                <div class="modal-header" style="height:50px;padding-top:15px;">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <div class="pull-left">
+                        <h4>优惠券</h4>
+                    </div>
+                </div>
+                <div class="modal-body" style="background-color:#fff;padding-bottom:0px;padding-top:10px;">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm  topRubric">
+                                <span class="input-group-addon">请选择优惠券</span>
+                                <select class="form-control rubric_sel" style="width: 112px;">
+                                        <option value="">xxxx</option>
+                                        <option value="">ssss</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group allRubric_sel" style="width:150px">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon " id="province">优惠券发放数量</span>
+                                <select class="form-control rubric_sel" style="width: 100px;">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                <!-- <input type="text" class="form-control" value="企业客户等级" /> -->
+                            </div>
+                        </div>
+                        <div class="form-group form-group-sm">
+                            <input type="submit" class="btn btn-warning" value="确认发放">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- 当前页面弹出框结束 -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="js/demo/bootstrap-table-demo.min.js"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+
+</body>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_bootstrap.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:06 GMT -->
+
+</html>

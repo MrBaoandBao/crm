@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_bootstrap.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:03 GMT -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>金吉鸟后台管理系统</title>
+    <meta name="keywords" content="金吉鸟后台管理系统">
+    <meta name="description" content="Html5+CSS3等现代技术实现的金吉鸟后台管理系统">
+
+    <link rel="shortcut icon" href="ico/LuckyBird.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="css/add_items.css" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <!-- Panel Other -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>添加商品</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#">选项1</a>
+                        </li>
+                        <li><a href="#">选项2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+
+
+                    <div class="col-sm-12">
+                        <!-- Example Events -->
+                        <div class="example-wrap">
+                            <div class="example">
+                                <div class="btn-group hidden-xs pull-right" id="exampleTableEventsToolbar" role="group">
+                                    <button type="button" class="btn btn-outline btn-default">
+                                    <a href="Item_list.html">
+										<i class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="color:blue"></i>
+                                        返回
+                                    </a>
+									</button>
+                                </div>
+
+                                <table class="table table-bordered">
+                                    <tr style="width: 700px;">
+                                        <th style="background-color:#F5F5F6" width="15%">
+                                            <span style="color:#000">商品名称</span>
+                                        </th>
+                                        <td width="450px;">
+                                            <input type="text" id="shId" class="form-control input-sm" placeholder="请输入商品名称">
+                                        </td>
+
+                                    </tr>
+                                </table>
+                                <!-- 商品大图 -->
+                                <div class="item_bigImg">
+                                    <div class="items_imgwords">
+                                        <h5>商品大图：</h5>
+                                    </div>
+                                    <div class="article">
+                                        <div class="item">
+                                            <img class="addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                            <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                            <div class="preBlock" style="border:0;">
+                                                <img class="preview" id="preview" alt="" name="pic" width="140" height="140" />
+                                            </div>
+                                            <img class="delete" onclick="deleteImg(this)" src="img/delete.png" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="icon addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                            <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                            <div class="preBlock">
+                                                <img class="preview" alt="" name="pic" width="140" height="140" />
+                                            </div>
+                                            <img class="delete" onclick="deleteImg(this)" src="img/delete.png" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="icon addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                            <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                            <div class="preBlock">
+                                                <img class="preview" alt="" name="pic" width="140" height="140" />
+                                            </div>
+                                            <img class="delete" onclick="deleteImg(this)" src="img/delete.png" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="icon addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                            <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                            <div class="preBlock">
+                                                <img class="preview" alt="" name="pic" width="140" height="140" />
+                                            </div>
+                                            <img class="delete" onclick="deleteImg(this)" src="img/delete.png" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="icon addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                            <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                            <div class="preBlock">
+                                                <img class="preview" alt="" name="pic" width="140" height="140" />
+                                            </div>
+                                            <img class="delete" onclick="deleteImg(this)" src="img/delete.png" />
+                                        </div>
+                                        <div style="clear: left;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 商品规格 -->、
+                            <div class="items_sizeLbox">
+                                <div class="items_size">
+                                    <div class="items_sizeWord">
+                                        <h5>商品规格：</h5>
+                                    </div>
+                                    <table class="items_sizeTable">
+                                        <tr>
+                                            <th>规格</th>
+                                            <th class="items_sizetable_td">库存</th>
+                                            <th>价格</th>
+                                        </tr>
+                                    </table>
+                                    <!-- <button class="item_size_Btn" id="items_sizeBtn" onclick="addrow">添加</button> -->
+                                    <input class="item_size_Btn" type="button" value="添加" id="items_sizeBtn">
+                                </div>
+                                <div class="items_addBorder">
+                                    <!-- 动态添加条目 -->
+                                    <!-- <div class="item_sizePart">
+                                    <div class="items_size" id="items_sizeShow">
+                                        <table class="items_addTab">
+                                            <tr>
+                                                <td><input type='text' name='name' /></td>
+                                                <td class='items_sizetable_td'><input type='text' name='name' /></td>
+                                                <td><input type='text' name='name' /></td>
+                                            </tr>
+                                        </table>
+                                        <input class="item_size_Btn" type="button" value="保存" id="items_sizeBtn2">
+                                        <input class="item_size_Btn" type="button" value="删除">
+                                    </div>
+                                    <div class="item itm_addimgs">
+                                        <img class="icon addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                        <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                        <div class="preBlock">
+                                            <img class="preview" alt="" name="pic" width="140" height="140" />
+                                        </div>
+                                        <img class="delete" onclick="deleteImg(this)" src="img/delete.png" />
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                            <!-- 上架状态 -->
+                            <div class="items_addBuff">
+                                <div class="items_buffWord">
+                                    <h5>上架状态：</h5>
+                                </div>
+                                <div class="items_addForm">
+                                    <select name="上架状态" id="">
+                                        <option value="Upper_shelf">上架中</option>
+                                        <option value="Lower_shelf">已下架</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 上架图片 -->
+                            <div class="items_UpperShelf">
+                                <div class="items_buffWord">
+                                    <h5>商品详情：</h5>
+                                </div>
+                                <div class="items_UpperShelf_addBigImg">
+                                    <div class="xyItems">
+                                        <div class="detail_addImg">
+                                            <img class="icon addImg" onclick="clickImg(this);" src="img/addImg.png" />
+                                            <input name="url" type="file" class="upload_input" onchange="change(this)" />
+                                            <div class="preBlock">
+                                                <img class="preview" alt="" name="pic" width="520" height="220" />
+                                            </div>
+                                            <div class="detail_delImg delete" onclick="deleteImg(this)">
+                                                <p>重选</p>
+                                            </div>
+                                            <div class="delete-image" title="删除">&times;</div>
+                                            <div class="xyrank">
+                                                <p class="up" title="向上移动">&uarr;</p>
+                                                <p class="dw" title="向下移动">&darr;</p>
+                                            </div>
+                                        </div>
+                                        <div class="writen_detail">
+                                            <textarea name="" id="" cols="520"></textarea>
+                                            <div class="detil_txt delete-text" title="删除">
+                                                <p>删除</p>
+                                            </div>
+                                            <div class="xyrank">
+                                                <p class="up" title="向上移动">&uarr;</p>
+                                                <p class="dw" title="向下移动">&darr;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 添加删除模块-->
+                                    <div class="detail_as">
+                                        <input type="button" value="添加图片" class="xyadd-image" id="detail_as_btn">
+                                        <input type="button" value="添加文字" class="xyadd-text">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Example Events -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Panel Other -->
+    </div>
+
+    <script src=" js/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js?v=3.3.6 "></script>
+    <script src="js/content.min.js?v=1.0.0 "></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js "></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js "></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js "></script>
+    <script src="js/demo/bootstrap-table-demo.min.js "></script>
+    <script type="text/javascript " src="http://tajs.qq.com/stats?sId=9051096 " charset="UTF-8 "></script>
+    <script type="text/javascript " src="js/add_items.js "></script>
+</body>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_bootstrap.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:06 GMT -->
+
+</html>

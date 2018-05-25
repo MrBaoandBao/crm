@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_bootstrap.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:03 GMT -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>金吉鸟后台管理系统</title>
+    <meta name="keywords" content="金吉鸟后台HTML,响应式后台">
+    <meta name="description" content="金吉鸟后台是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术 ">
+
+    <link rel="shortcut icon" href="ico/LuckyBird.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6 " rel="stylesheet ">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0 " rel="stylesheet ">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css " rel="stylesheet ">
+    <link href="css/animate.min.css " rel="stylesheet ">
+    <link href="css/style.min862f.css?v=4.1.0 " rel="stylesheet ">
+    <link rel="stylesheet" href="css/staff_management.css">
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        function isDel() {
+            swal({
+                    title: "您确定要删除这条信息吗",
+                    text: "删除后将无法恢复，请谨慎操作！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定",
+                    cancelButtonText: "取消",
+                    closeOnConfirm: false,
+                    closeOnCancel: false
+                },
+                function(isConfirm) {
+                    if (isConfirm) {
+                        swal("删除成功！", "您已经永久删除了这条信息。",
+                            "success"
+                        )
+                    } else {
+                        swal("已取消",
+                            "您取消了删除操作！", "error"
+                        )
+                    }
+                }
+            )
+        };
+    </script>
+
+</head>
+
+<body class="gray-bg ">
+    <div class="wrapper wrapper-content animated fadeInRight ">
+
+        <!-- Panel Other -->
+        <div class="ibox float-e-margins ">
+            <div class="ibox-title ">
+                <i class="glyphicon glyphicon-map-marker " style="color:rgb(3,163,227) "></i>
+                <h7>员工管理角色管理--维护角色与用户,角色与权限关系</h7>
+                <div class="ibox-tools ">
+                    <a class="collapse-link ">
+                        <i class="fa fa-chevron-up "></i>
+                    </a>
+                    <a class="dropdown-toggle " data-toggle="dropdown " href="# ">
+                        <i class="fa fa-wrench "></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user ">
+                        <li><a href="# ">选项1</a>
+                        </li>
+                        <li><a href="# ">选项2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link ">
+                        <i class="fa fa-times "></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content ">
+                <div class="row row-lg ">
+                    <div class="all_employee container-fluid">
+                        <!-- 角色列表 -->
+                        <div class="col-lg-3 employee_main">
+                            <div class="employee_header">
+                                <div style="height: 22px;line-height: 22px;"><span>角色列表</span></div>
+                                <div><input type="button" class="employee_ipt" value="+添加角色"></div>
+                            </div>
+                            <!-- 角色列表 -->
+                            <div class="employee_border">
+                                <table style="border-spacing:0px 20px;width: 310px;">
+                                    <!-- 单独一条记录 -->
+                                    <tr>
+                                        <th>管理员</th>
+                                        <td width="14%">
+                                            <div class="employee_line">
+                                                <a href="" title="修改">
+                                                    <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
+                                                </a>
+                                                &nbsp;&nbsp;
+                                                <a onclick="isDel();" title="删除" style="color:#CC0000">
+                                                    <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 单独一条记录 -->
+                                    <tr>
+                                        <th>运营经理</th>
+                                        <td width="14%">
+                                            <div class="employee_line">
+                                                <a href="" title="修改">
+                                                    <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
+                                                </a>
+                                                &nbsp;&nbsp;
+                                                <a onclick="isDel();" title="删除" style="color:#CC0000">
+                                                    <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 单独一条记录 -->
+                                    <tr>
+                                        <th>教练部</th>
+                                        <td width="14%">
+                                            <div class="employee_line">
+                                                <a href="" title="修改">
+                                                    <i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
+                                                </a>
+                                                &nbsp;&nbsp;
+                                                <a onclick="isDel();" title="删除" style="color:#CC0000">
+                                                    <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 单独一条记录 -->
+                                    <tr>
+                                        <th>产品部</th>
+                                        <td width="5%">
+                                            <div class="employee_line ">
+                                                <a href=" " title="修改 ">
+                                                    <i class="glyphicon glyphicon-pencil " aria-hidden="true "></i>
+                                                </a>
+                                                &nbsp;&nbsp;
+                                                <a onclick="isDel(); " title="删除 " style="color:#CC0000 ">
+                                                    <i class="glyphicon glyphicon-remove " aria-hidden="true "></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 角色权限tab -->
+                        <div class="col-lg-9 employee_tab " style="border:1px solid #ccc ">
+                            <div class="tab-wrapper ">
+                                <ul class="tab-menu ">
+                                    <li class="active ">角色与权限</li>
+                                    <li>角色与用户</li>
+                                </ul>
+                                <!-- tab分类页 -->
+                                <div class="tab-content " style="border:1px solid #ccc ">
+                                    <div>
+                                        <div class="selectbox">
+
+                                            <div class="select-bar">
+                                                <select multiple="multiple" id="select1">
+                                                    <option value="超级管理员">超级管理员</option>
+                                                    <option value="普通管理员">普通管理员</option>
+                                                    <option value="信息发布员">信息发布员</option>
+                                                    <option value="财务管理员">财务管理员</option>
+                                                    <option value="产品管理员">产品管理员</option>
+                                                    <option value="资源管理员">资源管理员</option>
+                                                    <option value="管理员">管理员</option>
+                                                    <option value="角色管理员">角色管理员</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="btn-bar">
+                                                <span id="add"><input type="button" class="btn" value=">"/></span><br />
+                                                <span id="add_all"><input type="button" class="btn" value=">>"/></span><br />
+                                                <span id="remove"><input type="button" class="btn" value="<"/></span><br />
+                                                <span id="remove_all"><input type="button" class="btn" value="<<"/></span>
+                                            </div>
+
+                                            <div class="select-bar"><select multiple="multiple" id="select2"></select></div>
+
+                                        </div>
+                                    </div>
+                                    <div>weweqwewewe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Panel Other -->
+    </div>
+
+    <script src="js/jquery.min.js?v=2.1.4 "></script>
+    <script src="js/bootstrap.min.js?v=3.3.6 "></script>
+    <script src="js/content.min.js?v=1.0.0 "></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js "></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js "></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js "></script>
+    <script src="js/demo/bootstrap-table-demo.min.js "></script>
+    <script src="js/staff_management.js "></script>
+    <script type="text/javascript " src="http://tajs.qq.com/stats?sId=9051096 " charset="UTF-8 "></script>
+
+</body>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_bootstrap.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:06 GMT -->
+
+</html>
